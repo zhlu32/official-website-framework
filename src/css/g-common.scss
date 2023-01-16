@@ -1,0 +1,175 @@
+/* import base css, so just import one css in html. 导入其它基础CSS
+    ========================================================================== */   
+
+@import "./g-var.scss";
+@import "./normalize.min.scss";    
+@import "./g-nav.scss";
+@import "./g-footer.scss";
+
+
+/* Common Class Define 通用CSS定义
+    ========================================================================== */    
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+.g-one-line-txt {
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.g-two-line-txt {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+}
+
+.g-full-block {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.g-section {
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+.g-section-content{
+    width: 1200px;
+    margin: 0 auto;
+    clear: both;
+}
+.g-section-title {
+    padding-top: 100px;
+    padding-bottom: 46px;
+    text-align: center;
+    .title {
+        font-size: 32px;
+        color: $g-main-color;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sec {
+        font-size: 32px;
+        color: $g-main-color;
+    }
+    .sec1 {
+        @extend .sec;
+        opacity: 0.2;
+    }
+    .sec2 {
+        @extend .sec;
+        opacity: 0.3;
+    }
+    .sec3 {
+        @extend .sec;
+        opacity: 0.4;
+    }
+    .sec4 {
+        @extend .sec;
+        opacity: 0.5;
+    }
+}
+
+.g-header-bg {
+    position: relative;
+    width: 100%;
+    .g-header-bg-img {
+        width: 100%;
+    }
+    .g-header-bg-shadow {
+        position: absolute;
+        left: 0px;
+        bottom: -38px;
+        width: 100%;
+        height: 91px;
+        z-index: 10;
+    }
+}
+
+
+/* laypage css for js/laypage.min.js  分页控件CSSS
+    ========================================================================== */
+
+.laypage_main{
+    text-align: center;
+    height: 30px;
+    font-size: 15px;
+    padding-top: 50px;
+}
+.laypage_main a, .laypage_main span{
+    color: #666;
+    display: inline-block;
+    border: 1px solid #ddd;
+    line-height: 28px;
+    padding: 0 12px;
+    margin: 0 5px;
+}
+.laypage_main .laypage_curr {
+    color: #fff;
+    background: #004EA2;
+}
+
+
+/* Reset CSS  重置默认CSS
+    ========================================================================== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header,
+hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fff;
+}
+a{
+    text-decoration:none;
+}
+a:hover {
+    text-decoration: none;
+}
+span:hover {
+    text-decoration: none;
+}
+ol, ul, li {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

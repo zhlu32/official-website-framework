@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    @@include('component/header/header.html')
+    <link rel="stylesheet" type="text/css" href="css/projects/projects.css">
+</head>
+<body>
+    @@include('component/nav/nav.html')
+
+    <div class="g-header-bg">
+        <img class="g-header-bg-img" src="img/projects/projects_bg.png">
+        <img class="g-header-bg-shadow" src="img/common/shadow_bg.png">
+    </div>
+
+    <div class="g-section" style="background-color: #F9FAFB;">
+        <div class="g-section-content">
+            <div class="g-section-title">
+                <i class="sec1">:</i>
+                <i class="sec2">:</i>
+                <i class="sec3">:</i>
+                <i class="sec4">:</i>
+                <i class="title">WHAT WE DO</i>
+                <i class="sec4">:</i>
+                <i class="sec3">:</i>
+                <i class="sec2">:</i>
+                <i class="sec1">:</i>
+            </div>
+        </div>
+    </div>  
+    
+    <div class="g-section" style="padding-bottom: 120px; padding-top: 16px;">
+        <ul class="g-section-content" id="g-list-ul"></ul>
+        <div class="g-section-content" id="g-pagination"></div>
+    </div>
+
+    @@include('component/footer/footer.html')
+    <script type="text/javascript" src="js/laypage.min.js"></script>
+    <script type="text/javascript" src="js/projects/projects.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+@import "./g-var.scss";
+
+.nav-layer-top{
+    width: 100%;
+    height: 110px;
+    a {
+        display: block;
+        height: 100%;
+    }
+    .official-logo {
+        display: block;
+        height: 80px;
+        margin: 15px;
+    }
+    .official-qrcode{
+        display: block;
+        height: 100px;
+        margin: 5px;
+    }
+}
+
+.nav-layer-bottom {
+    background-color: $g-nav-bg-color;
+    .navbar {
+        display: table;
+    }
+    .navbar-item {
+        display: table-cell;
+        text-align: center;
+        color: #fff;
+        padding: 15px 15px;
+        span {
+            position: relative;
+            display: inline-block;
+            font-size: $g-xx-fontsize;
+        }
+        span:after {
+            position: absolute;
+            content: ' ';
+            bottom: -8px;
+            left: 50%;
+            width: 0px;
+            height: 1px;
+            background: #fff;
+            transform: translate(-50%);
+            transition: all 0.3s linear;
+        }
+        span:hover:after{
+            width: 100%;
+        }
+    }
+    .active span:after{
+        width: 100%;
+    }
+}
+

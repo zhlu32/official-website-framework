@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    @@include('component/header/header.html')
+    <link rel="stylesheet" type="text/css" href="css/position/position.css">
+</head>
+<body>
+    @@include('component/nav/nav.html')
+
+    <div class="g-header-bg">
+        <img class="g-header-bg-img" src="img/position/position_bg.png">
+        <img class="g-header-bg-shadow" src="img/common/shadow_bg.png">
+    </div>
+
+    <div class="g-section" style="background-color: #F9FAFB; width: 100%; height: 300px;">
+        <div class="g-section-content">
+            <div class="g-section-title">
+                <i class="sec1">:</i>
+                <i class="sec2">:</i>
+                <i class="sec3">:</i>
+                <i class="sec4">:</i>
+                <i class="title">JOIN US</i>
+                <i class="sec4">:</i>
+                <i class="sec3">:</i>
+                <i class="sec2">:</i>
+                <i class="sec1">:</i>
+            </div>
+        </div>
+
+        <div class="g-section-content">
+            <div class="position-category-item position-category-item-select">FACULTY</div>
+            <div class="position-category-item">POSTDOC</div>
+            <div class="position-category-item">STUDENTS</div>
+        </div>
+
+        <div class="g-section-content">
+            <div class="category-img-root">
+                <div class="category-img">
+                    <img id="category-img-faculty" src="img/position/tab_icon.png">
+                </div>
+                <div class="category-img">
+                    <img id="category-img-postdoc" src="img/position/tab_icon.png" style="display: none;">
+                </div>
+                <div class="category-img">
+                    <img id="category-img-students" src="img/position/tab_icon.png" style="display: none;">
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>  
+    
+    <div class="tab-content g-section-content" id="tab-content" style="min-height: 140px; padding-bottom: 120px;">
+        <ul class="g-list-ul" id="faculty-list-ul"></ul>
+        <ul class="g-list-ul" id="postdoc-list-ul" style="display: none;"></ul>
+        <ul class="g-list-ul" id="students-list-ul" style="display: none;"></ul>
+    </div>
+        
+    @@include('component/footer/footer.html')
+    <script type="text/javascript" src="js/laypage.min.js"></script>
+    <script type="text/javascript" src="js/position/position.js"></script>
+
+</body>
+</html>
