@@ -175,6 +175,6 @@ gulp.task('watchAll', function () {
 
 
 /** gulp command **/
-gulp.task('dev', gulp.series('clean', 'init-task', 'tmp2dest', gulp.parallel('watchAll', 'browserSync')));
+gulp.task('dev', gulp.series('clean', 'init-task', 'img', 'mock', 'css', 'js', 'html', 'tmp2dest', gulp.parallel('watchAll', 'browserSync')));
 gulp.task('publish', gulp.series('clean', 'init-task', 'img', 'mock', 'css', 'js', 'html', 'tmp2dest'));
 

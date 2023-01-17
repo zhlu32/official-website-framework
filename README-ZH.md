@@ -3,15 +3,36 @@
 
 
 # Official Website Framework满足了开发官方站点的哪些需求？  
+* 适配所有主流浏览器，且支持手机端浏览。
+
 * 采用`@@include`，实现一键引入公用布局文件内容，避免代码重复。如Nav、Footer等布局文件。
   
 * 采用`gulp`构建脚本，实现开发和构建分离。如Sass布局文件，自动转换为浏览器可识别的CSS文件。
   
 * 采用`browser-sync`，实现代码修改后的热部署，在浏览器中实时看到修改效果。
+
+* 采用`gulp-uglify`，实现压缩JS文件；采用`gulp-cssnano`，实现压缩CSS文件。减小文件体积，加快网络请求。
   
 * 采用`gulp-rev`，实现在在文件名尾部，自动添加文件hash值，解决浏览器缓存问题。如CSS、JS、图片、Json等。
   
 * 采用`$.getJSON`访问站点Json数据文件，实现获取站点动态数据，无需后端开发。  
+
+
+# Official Website Framework设计
+## 约定大于配置
+* js文件： src/js/  
+
+* css文件：src/css/  css文件扩展名可以使用scss或css
+
+* img图片： src/img/
+
+* 公用组件： src/components/
+
+* 站点动态数据： src/moke/**/*.json
+
+* 构建临时目录： .tmp/
+  
+* 发布目录：    .dist/
 
 
 # 快速开始

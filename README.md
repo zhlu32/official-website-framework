@@ -3,15 +3,36 @@ It is a fast, simple yet fully featured and very efficient official website fram
 
 
 # Official Website Framework Characteristic  
+* Suitable for all major browsers and support mobile browsing.
+
 * Using `@@include`, import a common Layout in html, avoid code duplication. Such as Nav, Footer Layout.
   
 * Using `gulp` script, separation of development and build. Such as Sass automatically converted to a CSS file.
 
 * Using `browser-sync`, to achieve hot deployment after code modification in development.
+
+* Using `gulp-uglify`, to compress JS files; Using `gulp-cssnano`, compression CSS file. Reduce file size and speed up network request
   
 * Using `gulp-rev`, to achieve automatically add the hash value of the file at the end of the file name to solve the browser cache problem. Such as CSS, JS, Img, Json and so on.
   
 * Using `$.getjson` to access Json file, to achieve the acquisition of site dynamic data, without back-end development. 
+
+
+# Official Website Framework Design
+## Convention over configuration
+* js file: src/js/
+
+* css files: src/css/ (css file extensions can use scss or css)
+
+* img image: src/img/
+
+* Common components: src/components/
+
+* Dynamic site data: src/moke/**/*.json
+
+* Temp dir: .tmp/
+
+* Publish dir: .dist/
 
 
 # Quick Start
@@ -27,7 +48,7 @@ It is a fast, simple yet fully featured and very efficient official website fram
 4. Run `npm run dev` to automatically open the browser and access the template site.
 
 
-# Publishing site
+# Publishing Site
 1. Execute `npm run publish` to publish all site files which generated in the .dist directory.
    
 2. Install apache on the web server. Such as, run `apt install apache` on Linux.
@@ -51,7 +72,7 @@ It is a fast, simple yet fully featured and very efficient official website fram
 6. Access 'ip:80' and publish it successfully.
 
 
-# Web Development Useful Link
+# Web Development Useful Links
 [Css Animation: Cross-browser Animations Lib](https://animate.style/)  
 
 [Caniuse: provides up-to-date browser support for web technologies](https://caniuse.com/)
