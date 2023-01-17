@@ -1,4 +1,4 @@
-# Official Website Framework <a href="README_ZH.md"> <img width="20px" src="flag-china.svg" />中文文档</a> 
+# Official Website Framework <a href="README-ZH.md"> <img width="20px" src="flag-china.svg" />中文文档</a> 
 It is a fast, simple yet fully featured and very efficient official website framework for Gulp + Html + Jquery + Sass. 
 
 
