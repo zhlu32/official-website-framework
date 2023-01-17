@@ -1,22 +1,54 @@
-# Official Website Framework
-这是一个基于Gulp + Html + Jquery + Sass编写的快速、简单但功能齐全且非常高效的，用于构建官方网站的框架。  
+# Official Website Framework <a href="README_ZH.md"> <img width="20px" src="flag-china.svg" />中文文档</a> 
+It is a fast, simple yet fully featured and very efficient official website framework for Gulp + Html + Jquery + Sass. 
 
-Official Website Framework满足了开发官方站点的哪些需求？
-* 
 
-# 开发环境
-* 安装node [node download](https://nodejs.org/zh-cn/download/)
-* 全局安装gulp-cli  `npm -g install gulp-cli`
+# Official Website Framework Characteristic  
+* Using `@@include`, import a common Layout in html, avoid code duplication. Such as Nav, Footer Layout.
+  
+* Using `gulp` script, separation of development and build. Such as Sass automatically converted to a CSS file.
 
-# 初始化环境
-在OFFICIAL-WEBSITE下执行 `npm install`，自动下载所有项目依赖的三方库
+* Using `browser-sync`, to achieve hot deployment after code modification in development.
+  
+* Using `gulp-rev`, to achieve automatically add the hash value of the file at the end of the file name to solve the browser cache problem. Such as CSS, JS, Img, Json and so on.
+  
+* Using `$.getjson` to access Json file, to achieve the acquisition of site dynamic data, without back-end development. 
 
-# 命令
-* 调试用： `npm run dev`
-* 发布用： `npm run publish`
 
-运行命令后，tmp目录是中转目录，dist目录是发布目录。
+# Quick Start
+1. Globally install Node [Download Node installation package](https://nodejs.org/en/download/).
+   
+2. Globally install gulp-cli.
+   ```shell
+   npm -g install gulp-cli
+   ```
+   
+3. Run `npm install` in the Official-Website-Framework root directory to download the three-party libraries that the project depends on.
+   
+4. Run `npm run dev` to automatically open the browser and access the template site.
 
+
+# Publishing site
+1. Execute `npm run publish` to publish all site files which generated in the .dist directory.
+   
+2. Install apache on the web server. Such as, run `apt install apache` on Linux.
+   
+3. Access 'ip:80' in the browser. If the default apache page is displayed, so the apache installation is successful.
+   
+4. Apache is automatically installed by command, the configuration file is in the `/etc/nginx` directory, `sites-available/default` is the configuration file of the default apache page published, pointing to the web service directory `/var/www/html`. After adding the 404 page configuration to the default configuration file, execute `nginx -s reload`.   
+       
+   ```
+   server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+        # add 404 pape config
+        error_page 404 /404.html;
+    }
+   ```
+
+5.  Run `sh deploy.sh` to upload the contents of the .dist directory to the '/var/www/html' directory of the web server.
+   
+6. Access 'ip:80' and publish it successfully.
 
 
 # Web Development Useful Link

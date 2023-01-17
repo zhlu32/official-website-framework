@@ -1,0 +1,10 @@
+.idea/
+.DS_Store/
+.dccache
+node_modules/
+build/
+.tmp/
+.dist/
+package-lock.json
+.DS_Store
+config/index.js
