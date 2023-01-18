@@ -11,7 +11,6 @@ push_branch=gh-pages
 # 生成静态文件
 npm run publish
 
-# 进入生成的文件夹
 cd $dist_path
 
 git init
