@@ -1,7 +1,7 @@
 # Official Website Framework <a href="README-ZH.md"> <img width="20px" src="flag-china.svg" />中文文档</a> 
 It is a fast, simple yet fully featured and very efficient official website framework for Gulp + Html + Jquery + Sass. 
 
-[🚀🚀Official Website Demo Link](https://zhlu32.github.io/official-website-framework/index.html)
+[🚀🚀Official Website Demo Link](https://zhlu32.github.io/index.html)
 
 # Official Website Framework Characteristic  
 * Suitable for all major browsers and support mobile browsing.
