@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Replace its valus with your own -->
+<title>Official-Website-Framework</title>
+<meta name="description" content="Easily and Quickly Deploy a Offcial-Website">
+<meta name="keywords" content="office-website,jquery,template">
+<link rel="shortcut icon" href="img/index/icon-logo-3e3cbb052e.png" />
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="css/g-common-012738f95e.css">
+<script type="text/javascript" src="js/g-common-4e3e05e866.js"></script>
+<script type="text/javascript" src="js/jquery-40363b1a01.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/404-fde93411d8.css">
+</head>
+<body>
+    <div class="g-section">
+    <div class="g-section-content nav-layer-top">
+        <a href="/index.html" class="fl"><img src="img/common/logo-18a24e646d.png" class="official-logo"></a>
+        <img src="img/common/qr_code_top-04d2865d62.png" class="official-qrcode fr">
+    </div>
+</div>
+<div class="g-section nav-layer-bottom">
+    <div class="g-section-content navbar">
+        <a href="/index.html" class="navbar-item"><span>HOME</span></a>
+        <a href="/projects.html" class="navbar-item"><span>PROJECTS</span></a>
+        <a href="/position.html" class="navbar-item"><span>POSITION</span></a>
+        <a href="/position.html" class="navbar-item"><span>DESIGN</span></a>
+        <a href="/position.html" class="navbar-item"><span>COMPONENT</span></a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    (function () {
+        var _index = -1;
+        var path = window.location.pathname;
+        if (path.indexOf("position.html") >= 0) {
+            _index = 2;
+        }else if (path.indexOf("projects.html") >= 0) {
+            _index = 1;
+        }else if(path.indexOf("index.html") >= 0 || path === '/'){
+            _index = 0;
+        }
+        if(_index !== -1){
+            $(".nav-layer-bottom a").eq(_index).addClass("active").siblings().removeClass("active");
+        }
+    })();
+</script>
+
+    <div class="g-section" style="background-color: #F4F6FD; padding-bottom: 120px; padding-top: 195px; text-align: center;">
+        <img src="img/common/404-4a775cbaac.png" style="width: 413px;">
+        <p style="color:#333333; font-size: 12px; margin-top: 10px;">很抱歉，您访问的页面不存在</p>
+        <div class="g-section-content" style="text-align: center; margin: 0 auto; padding-top: 36px;">
+            <a href="index.html" class="back-index">返回首页</a>
+        </div>
+    </div>
+
+    <div class="g-section footlink">
+    <div class="g-section-content footlink-content">
+        <div class="title">友情链接</div>
+        <ul class="footlink-ul">
+            <li><a href="https://www.hitsz.edu.cn/index.html" target="_blank">哈工大(深圳)官网</a></li>
+            <li><a href="https://www.hit.edu.cn" target="_blank">哈工大官网</a></li>
+            <li><a href="https://www.pcl.ac.cn" target="_blank">鹏城实验室</a></li>
+            <li><a href="http://carc.hitsz.edu.cn/index.htm" target="_blank">网络空间安全研究中心</a></li>
+            <li><a href="http://cs.hitsz.edu.cn" target="_blank">计算机科学与技术学院</a></li>
+        </ul>
+        <div class="divider"></div>
+        <div class="fl">
+            <div class="title">联系我们</div>
+            <div class="sub-title">地址：广东省深圳市南山区西丽大学城哈尔滨工业大学深圳园区L栋信息楼</div>
+            <div class="sub-title">邮编：518000</div>
+        </div>
+        <div class="footlink-QRcode fr">
+            <p>数据安全研究院公众号</p>
+        </div>
+    </div>
+</div>
+
+<div class="g-section footer">
+    <p>©版权所有 2020-2023 数据安全研究院</p>
+</div>
+
+
+
+</body>
+</html>

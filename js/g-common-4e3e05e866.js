@@ -1,0 +1,1 @@
+window.htmlEncode=function(e){return e=e.replace(/&/g,"&amp;"),e=e.replace(/>/g,"&gt;"),e=e.replace(/</g,"&lt;"),e=e.replace(/"/g,"&quot;"),e=e.replace(/'/g,"&#39;")};

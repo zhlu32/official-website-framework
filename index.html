@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Replace its valus with your own -->
+<title>Official-Website-Framework</title>
+<meta name="description" content="Easily and Quickly Deploy a Offcial-Website">
+<meta name="keywords" content="office-website,jquery,template">
+<link rel="shortcut icon" href="img/index/icon-logo-3e3cbb052e.png" />
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="css/g-common-012738f95e.css">
+<script type="text/javascript" src="js/g-common-4e3e05e866.js"></script>
+<script type="text/javascript" src="js/jquery-40363b1a01.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index/index-d25b139d50.css">
+    <link rel="stylesheet" type="text/css" href="css/projects/projects-282effa5fc.css">
+</head>
+<body>
+    <div class="g-section">
+    <div class="g-section-content nav-layer-top">
+        <a href="/index.html" class="fl"><img src="img/common/logo-18a24e646d.png" class="official-logo"></a>
+        <img src="img/common/qr_code_top-04d2865d62.png" class="official-qrcode fr">
+    </div>
+</div>
+<div class="g-section nav-layer-bottom">
+    <div class="g-section-content navbar">
+        <a href="/index.html" class="navbar-item"><span>HOME</span></a>
+        <a href="/projects.html" class="navbar-item"><span>PROJECTS</span></a>
+        <a href="/position.html" class="navbar-item"><span>POSITION</span></a>
+        <a href="/position.html" class="navbar-item"><span>DESIGN</span></a>
+        <a href="/position.html" class="navbar-item"><span>COMPONENT</span></a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    (function () {
+        var _index = -1;
+        var path = window.location.pathname;
+        if (path.indexOf("position.html") >= 0) {
+            _index = 2;
+        }else if (path.indexOf("projects.html") >= 0) {
+            _index = 1;
+        }else if(path.indexOf("index.html") >= 0 || path === '/'){
+            _index = 0;
+        }
+        if(_index !== -1){
+            $(".nav-layer-bottom a").eq(_index).addClass("active").siblings().removeClass("active");
+        }
+    })();
+</script>
+
+    <div class="g-section" id="banner-root">
+        <div class="banner-page" style="background-color: rgb(242, 239, 239)">
+            <div class="g-section-content banner-page-content">
+                <img  src="img/index/banner-img-1-4532bb4bd5.png" style="height: 540px;position: absolute;bottom: 0px;right: 0px;">
+                <div class="fl" style="text-align: left;">
+                    <p style="font-size: 44px;margin: 138px 0 24px 16px;color: #191919;letter-spacing: 2px;">国内首创云堡垒机</p>
+                    <p style="font-size: 18px;margin-left: 16px;color: #191919;letter-spacing: 2px;opacity: 0.6;line-height: 26px;width: 560px;">研制成功国内第一款具备对所有特权行为实现透明监控和动态授权的“云堡垒机”，填补了国内云安全关键系统空白。支撑了全国3000余个政企云业务的安全运营，为“十九大”、全国“两会”、金砖国家领导人会晤、“一带一路”高峰论坛等重大活动提供了安全保障，并荣获2019年中国电子学会科技进步一等奖。</p>
+                </div>
+            </div>
+        </div>
+        <div class="banner-page" style="background-color: linear-gradient(to right, #D4DDEC , #BBC8DB);">
+            <div class="g-section-content banner-page-content">
+                <img  src="img/index/banner-img-2-e821bcc865.png" style="height: 540px;position: absolute;left: 0px;top: 0px;">
+            </div>
+        </div>
+        <div class="banner-page" style="background-color: #083395">
+            <div class="g-section-content banner-page-content">
+                <img  src="img/index/banner-img-3-f801b41a95.png" style="height: 540px;position: absolute;left: 16px;top: 0px;">
+                <div class="fl"style="text-align: left;">
+                    <p style="font-size: 44px;margin: 90px 0 24px 16px;color: #fff;letter-spacing: 2px;">自动驾驶虚拟仿真测试平台</p>
+                    <p style="font-size: 18px;margin-left: 16px;color: #FEFEFE;letter-spacing: 2px;opacity: 0.6;line-height: 26px;width: 560px;">基于AI靶场打造了具备多车自主协同控制、高还原度仿真、海量测试场景的智能网联汽车虚拟仿真测试平台，有力支撑了2021智能汽车信息安全公开赛、2022世界智能驾驶挑战赛等重要赛事，并与中汽创智、东风等智能网联汽车企业建立合作，完成小规模试点示范。</p>
+                </div>
+            </div>
+        </div>
+        <div id="banner-indicator-root"></div>
+    </div>
+
+    <div class="g-section">
+        <div class="g-section-content">
+            <div class="g-section-title" style="padding-bottom: 60px;">
+                <i class="sec1">:</i>
+                <i class="sec2">:</i>
+                <i class="sec3">:</i>
+                <i class="sec4">:</i>
+                <i class="title">WHAT WE DO</i>
+                <i class="sec4">:</i>
+                <i class="sec3">:</i>
+                <i class="sec2">:</i>
+                <i class="sec1">:</i>
+            </div>
+            <div class="what-we-do-root">
+                <div class="what-we-do">
+                    <img src="img/index/icon1-41266df4f5.png">
+                    <p>数据安全</p>
+                </div>
+                <div class="what-we-do">
+                    <img src="img/index/icon2-58fdb214b8.png">
+                    <p>隐私计算</p>
+                </div>
+                <div class="what-we-do">
+                    <img src="img/index/icon3-96ee3f6bb4.png">
+                    <p>漏洞挖掘</p>
+                </div>
+                <div class="what-we-do">
+                    <img src="img/index/icon4-1d15c93507.png">
+                    <p>智能交通安全</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="g-section-content">
+        <div class="g-section-title" style="padding-bottom: 36px;">
+            <i class="sec1">:</i>
+            <i class="sec2">:</i>
+            <i class="sec3">:</i>
+            <i class="sec4">:</i>
+            <i class="title">PROJECTS</i>
+            <i class="sec4">:</i>
+            <i class="sec3">:</i>
+            <i class="sec2">:</i>
+            <i class="sec1">:</i>
+        </div>
+        <div id="projects-root"></div>
+        <div class="g-section-content" style="text-align: center; margin: 0 auto; padding-top: 36px;">
+            <a href="projects.html" target="_blank" class="more_technology">查看更多</a>
+        </div>
+    </div> 
+
+    <div class="g-section">
+        <div class="g-section-content">
+            <div class="g-section-title" style="padding-bottom: 60px;">
+                <i class="sec1">:</i>
+                <i class="sec2">:</i>
+                <i class="sec3">:</i>
+                <i class="sec4">:</i>
+                <i class="title">JOIN US</i>
+                <i class="sec4">:</i>
+                <i class="sec3">:</i>
+                <i class="sec2">:</i>
+                <i class="sec1">:</i>
+            </div>
+        </div>
+    </div>
+    <div class="g-section join-us-bg">
+        <div class="g-section-content">
+            <div class="join-us">
+                <a class="join-us-content" href="position.html?type=faculty" target="_blank">
+                    <img src="img/index/icon5-96838c6fb6.png">
+                    <p>FACULTY</p>
+                    <div class="divider"></div>
+                    <div class="detail">查看详情</div>
+                </a>
+            </div>
+            <div class="join-us">
+                <a class="join-us-content" href="position.html?type=postdoc" target="_blank">
+                    <img src="img/index/icon6-2c7e1b5164.png">
+                    <p>POSTDOC</p>
+                    <div class="divider"></div>
+                    <div class="detail">查看详情</div>
+                </a>
+            </div>
+            <div class="join-us">
+                <a class="join-us-content" href="position.html?type=students" target="_blank">
+                    <img src="img/index/icon7-51c85ae255.png">
+                    <p>STUDENTS</p>
+                    <div class="divider"></div>
+                    <div class="detail">查看详情</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="g-section footlink">
+    <div class="g-section-content footlink-content">
+        <div class="title">友情链接</div>
+        <ul class="footlink-ul">
+            <li><a href="https://www.hitsz.edu.cn/index.html" target="_blank">哈工大(深圳)官网</a></li>
+            <li><a href="https://www.hit.edu.cn" target="_blank">哈工大官网</a></li>
+            <li><a href="https://www.pcl.ac.cn" target="_blank">鹏城实验室</a></li>
+            <li><a href="http://carc.hitsz.edu.cn/index.htm" target="_blank">网络空间安全研究中心</a></li>
+            <li><a href="http://cs.hitsz.edu.cn" target="_blank">计算机科学与技术学院</a></li>
+        </ul>
+        <div class="divider"></div>
+        <div class="fl">
+            <div class="title">联系我们</div>
+            <div class="sub-title">地址：广东省深圳市南山区西丽大学城哈尔滨工业大学深圳园区L栋信息楼</div>
+            <div class="sub-title">邮编：518000</div>
+        </div>
+        <div class="footlink-QRcode fr">
+            <p>数据安全研究院公众号</p>
+        </div>
+    </div>
+</div>
+
+<div class="g-section footer">
+    <p>©版权所有 2020-2023 数据安全研究院</p>
+</div>
+
+
+
+    <script type="text/javascript" src="js/index/index-20e1988142.js"></script>
+
+</body>
+</html>

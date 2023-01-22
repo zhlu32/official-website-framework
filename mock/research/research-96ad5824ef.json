@@ -1,0 +1,28 @@
+{
+    "list": [
+      {
+        "year": "2022",
+        "url": "https://arxiv.org/pdf/2004.03216.pdf",
+        "title": "多数据源联合建模场景下，当数据标签存在噪音时，如何训练提升联合模型效果？",
+        "publish": "ESEM 2022",
+        "peoples": "韩培义, 刘川意, 王佳慧, 段少明, 潘鹤中, 方滨兴",
+        "desc": "多数据源联合建模场景下，当数据标签存在噪音时，如何训练提升联合模型效果"
+      },
+      {
+        "year": "2022",
+        "url": "mock/research/Vulnerabilities Mapping based on OWASP-SANS- A Survey for Static Application Security Testing (SAST).pdf",
+        "title": "多数据源联合建模场景下，当数据标签存在噪音时，如何训练提升联合模型效果？",
+        "publish": "ESEM 2022",
+        "peoples": "韩培义, 刘川意, 王佳慧, 段少明, 潘鹤中, 方滨兴",
+        "desc": "多数据源联合建模场景下，当数据标签存在噪音时，如何训练提升联合模型效果"
+      },
+      {
+        "year": "2021",
+        "url": "https://arxiv.org/pdf/2004.03216.pdf",
+        "title": "多数据源联合建模场景下，当数据标签存在噪音时，如何训练提升联合模型效果？",
+        "publish": "ESEM 2022",
+        "peoples": "韩培义, 刘川意, 王佳慧, 段少明, 潘鹤中, 方滨兴",
+        "desc": "多数据源联合建模场景下，当数据标签存在噪音时，如何训练提升联合模型效果"
+      }
+    ]
+}
