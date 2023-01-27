@@ -6,12 +6,12 @@
 
 # Official Website Framework满足了开发官方站点的哪些需求？  
 * 适配所有主流浏览器，且支持手机端浏览。
-
-* 采用`@@include`，实现一键引入公用布局文件内容，避免代码重复。如Nav、Footer等布局文件。
   
 * 采用`gulp`构建脚本，实现开发和构建分离。如Sass布局文件，自动转换为浏览器可识别的CSS文件。
   
 * 采用`browser-sync`，实现代码修改后的热部署，在浏览器中实时看到修改效果。
+
+* 采用`gulp-file-include`，实现一键引入公用布局文件内容，避免代码重复。如Nav、Footer等布局文件。  
 
 * 采用`gulp-uglify`，实现压缩JS文件；采用`gulp-cssnano`，实现压缩CSS文件。减小文件体积，加快网络请求。
   
@@ -35,6 +35,44 @@
 * 构建临时目录： .tmp/
   
 * 发布目录：    .dist/
+
+## 页面设计
+1. 页面以水平居中的1200px，作为编辑区域。  优点：自动适配手机端浏览器。
+   
+   示例页面布局：
+   ```html
+   <div class="g-section">
+        <div class="g-section-content">
+        </div>
+   </div>
+   ```  
+
+2. 不同页面的 `head`, `nav`, `footer` 等属于重复代码，通过`@@include`技术实现组件化。  
+   
+   404页面，代码示例如下，So Simple 💎：
+   ```html
+   <!DOCTYPE html>
+   <html>
+   <head>
+      @@include('component/header/header.html')
+      <link rel="stylesheet" type="text/css" href="css/404.css">
+   </head>
+   <body>
+      @@include('component/nav/nav.html')
+
+      <div class="g-section" style="background-color: #F4F6FD; padding-bottom: 120px; padding-top: 195px; text-align: center;">
+         <img src="img/common/404.png" style="width: 413px;">
+         <p style="color:#333333; font-size: 12px; margin-top: 10px;">很抱歉，您访问的页面不存在</p>
+         <div class="g-section-content" style="text-align: center; margin: 0 auto; padding-top: 36px;">
+               <a href="index.html" class="back-index">返回首页</a>
+         </div>
+      </div>
+
+      @@include('component/footer/footer.html')
+
+   </body>
+   </html>
+   ```
 
 
 # 快速开始

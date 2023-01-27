@@ -5,12 +5,12 @@ It is a fast, simple yet fully featured and very efficient official website fram
 
 # Official Website Framework Characteristic  
 * Suitable for all major browsers and support mobile browsing.
-
-* Using `@@include`, import a common Layout in html, avoid code duplication. Such as Nav, Footer Layout.
   
 * Using `gulp` script, separation of development and build. Such as Sass automatically converted to a CSS file.
 
 * Using `browser-sync`, to achieve hot deployment after code modification in development.
+
+* Using `gulp-file-include`, import a common Layout in html, avoid code duplication. Such as Nav, Footer Layout.
 
 * Using `gulp-uglify`, to compress JS files; Using `gulp-cssnano`, compression CSS file. Reduce file size and speed up network request
   
@@ -35,6 +35,43 @@ It is a fast, simple yet fully featured and very efficient official website fram
 
 * Publish dir: .dist/
 
+## Page design
+1. Set the page horizontally at 1200px as the edit area. Advantages: Automatically adapt to the mobile browser.
+
+   Sample page layout:
+
+   ```html
+   <div class="g-section">
+        <div class="g-section-content">
+        </div>
+   </div>
+   ```  
+2. The 'head', 'nav', 'footer' in different pages belong to repeated code, which is realized by the '@@include' technology.
+
+   The 404 page code, So Simple 💎 :    
+   ```html
+   <!DOCTYPE html>
+   <html>
+   <head>
+      @@include('component/header/header.html')
+      <link rel="stylesheet" type="text/css" href="css/404.css">
+   </head>
+   <body>
+      @@include('component/nav/nav.html')
+
+      <div class="g-section" style="background-color: #F4F6FD; padding-bottom: 120px; padding-top: 195px; text-align: center;">
+         <img src="img/common/404.png" style="width: 413px;">
+         <p style="color:#333333; font-size: 12px; margin-top: 10px;">很抱歉，您访问的页面不存在</p>
+         <div class="g-section-content" style="text-align: center; margin: 0 auto; padding-top: 36px;">
+               <a href="index.html" class="back-index">返回首页</a>
+         </div>
+      </div>
+
+      @@include('component/footer/footer.html')
+
+   </body>
+   </html>
+   ``` 
 
 # Quick Start
 1. Globally install Node [Download Node installation package](https://nodejs.org/en/download/).
